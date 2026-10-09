@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Morning, ossy! ☀️</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      background: linear-gradient(145deg, #fff7ed, #ffe7ef, #eee7ff);
+      font-family: "Trebuchet MS", sans-serif;
+      color: #675264;
+      text-align: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 390px;
+      padding: 38px 24px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid white;
+      border-radius: 30px;
+      box-shadow: 0 15px 50px #bc8ca52b;
+      animation: appear .8s ease both;
+    }
+
+    .sun {
+      font-size: 76px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .tag {
+      margin-top: 22px;
+      color: #c77c9c;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 39px;
+      line-height: 1.2;
+      margin: 14px 0;
+    }
+
+    h1 span { color: #d77f9f; }
+
+    p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: #958296;
+      margin: 20px 0 26px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 15px 23px;
+      border-radius: 18px;
+      background: #df8eac;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px #df8eac40;
+      transition: transform .2s;
+    }
+
+    a:hover { transform: translateY(-3px); }
+
+    .note {
+      font-size: 11px;
+      margin-top: 24px;
+      color: #b5a2b5;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0) rotate(-5deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="sun">☀️</div>
+    <div class="tag">A LITTLE SOMETHING FOR YOU</div>
+    <h1>Good morning,<br><span>ossy!</span> ☁️</h1>
+    <p>
+      Hey sleepyhead! ♡<br>
+      I made a tiny little surprise for you.<br>
+      Ready to start your day with a smile?
+    </p>
+    <a href="letter.html">Open your surprise ♡ →</a>
+    <div class="note">made with a little bit of care ✿</div>
+  </main>
+</body>
+</html>
