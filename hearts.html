@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Happiness</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #fff1f3, #ffe4ec, #fff8f0);
+  color: #805365;
+  text-align: center;
+  padding: 24px;
+}
+.card {
+  max-width: 420px;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  padding: 35px 25px;
+  border-radius: 28px;
+  box-shadow: 0 12px 35px #c98da322;
+}
+.hearts { font-size: 35px; animation: float 2s ease-in-out infinite; }
+h1 { font-size: 29px; font-weight: normal; }
+p { font-size: 17px; line-height: 1.8; }
+button, .next {
+  display: inline-block;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 30px;
+  background: #d98ba7;
+  color: white;
+  padding: 13px 22px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#message { display: none; }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="hearts">♡ ♥ ♡</div>
+  <h1>A tiny reminder</h1>
+  <p>In case nobody told you today...</p>
+  <button onclick="showMessage()">Tap here ♡</button>
+  <div id="message">
+    <p>You deserve good things, peaceful days, and a thousand little reasons to smile.</p>
+    <p>So here's one little reason, from me to you. ♡</p>
+    <a class="next" href="gift.html">One last thing →</a>
+  </div>
+</div>
+<script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+}
+</script>
+</body>
+</html>
